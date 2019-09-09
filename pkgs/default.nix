@@ -1,7 +1,7 @@
 { pkgs ? import <nixpkgs> {} }:
 
 {
- # TODO
+  powerlevel10k = pkgs.callPackage ./powerlevel10k {};
 }
 // (if pkgs.stdenv.isLinux then {
   kaniko = pkgs.callPackage ./kaniko {};
