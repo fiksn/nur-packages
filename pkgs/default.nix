@@ -4,7 +4,7 @@
  # TODO
 }
 // (if pkgs.stdenv.isLinux then {
-  cheatsheet = pkgs.callPackage ./kaniko {};
+  kaniko = pkgs.callPackage ./kaniko {};
 } else {})
 // (if pkgs.stdenv.isDarwin then {
   cheatsheet = pkgs.callPackage ./cheatsheet {};
